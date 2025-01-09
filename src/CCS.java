@@ -3,15 +3,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.*;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
 
 public class CCS {
 
     private final ExecutorService clientHandlerPool;
+    private final ArrayList<String> connectedClients = new ArrayList<>();
 
     //global statistics variables
     private final AtomicInteger newConnectedClientsOverall = new AtomicInteger(0);
@@ -91,7 +90,12 @@ public class CCS {
             System.out.println("TCP socket created on port: " + port);
             while (true) {
                 Socket clientSocket = tcpSocket.accept();
-                newConnectedClients.incrementAndGet();
+                if (!connectedClients.contains(clientSocket.getInetAddress().getHostAddress() + ":" + clientSocket.getPort())) {
+                    newConnectedClients.incrementAndGet();
+                    synchronized (connectedClients) {
+                        connectedClients.add(clientSocket.getInetAddress().getHostAddress() + ":" + clientSocket.getPort());
+                    }
+                }
                 clientHandlerPool.execute(() -> handleClient(clientSocket));
             }
         } catch (IOException e) {

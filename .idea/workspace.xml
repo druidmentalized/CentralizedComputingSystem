@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CentralizedComputingSystem:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4637109-ed29-43b6-bb95-8ec7f4ffb9f3" name="Changes" comment="Program not tested(TCP and UDP sockets completely done), no statistics writing">
+    <list default="true" id="e4637109-ed29-43b6-bb95-8ec7f4ffb9f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CCSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCSClient.java" afterDir="false" />
@@ -40,19 +45,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.RunClient.executor": "Run",
     "Application.RunServer.executor": "Run",
+    "JAR Application.RunJarServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/IDEAProjects/CentralizedComputingSystem/src",
+    "last_opened_file_path": "C:/IDEAProjects/CentralizedComputingSystem/out/artifacts/CentralizedComputingSystem_jar/CentralizedComputingSystem.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,31 +73,44 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunServer">
+  <component name="RunManager" selected="Application.RunClient">
     <configuration name="RunClient" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="CCSClient" />
       <module name="CentralizedComputingSystem" />
+      <option name="PROGRAM_PARAMETERS" value="5058" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="RunServer" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="CCS" />
       <module name="CentralizedComputingSystem" />
+      <option name="PROGRAM_PARAMETERS" value="5058" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunJarServer" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/CentralizedComputingSystem_jar/CentralizedComputingSystem.jar" />
+      <option name="PROGRAM_PARAMETERS" value="5058" />
+      <option name="WORKING_DIRECTORY" value="C:\IDEAProjects\CentralizedComputingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.RunServer" />
       <item itemvalue="Application.RunClient" />
+      <item itemvalue="JAR Application.RunJarServer" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -103,7 +125,9 @@
       <workItem from="1735936242283" duration="1000" />
       <workItem from="1736186068472" duration="17000" />
       <workItem from="1736391469038" duration="5966000" />
-      <workItem from="1736424905090" duration="4557000" />
+      <workItem from="1736424905090" duration="4712000" />
+      <workItem from="1736429792384" duration="44000" />
+      <workItem from="1736431204905" duration="3194000" />
     </task>
     <task id="LOCAL-00001" summary="Program not tested(TCP and UDP sockets completely done), no statistics writing">
       <option name="closed" value="true" />
@@ -113,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736398506449</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Program seems to be working correctly. Some of the parts of the requirements are still not clear, so they may be changed">
+      <option name="closed" value="true" />
+      <created>1736429603726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736429603726</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +153,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Program not tested(TCP and UDP sockets completely done), no statistics writing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program not tested(TCP and UDP sockets completely done), no statistics writing" />
+    <MESSAGE value="Program seems to be working correctly. Some of the parts of the requirements are still not clear, so they may be changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program seems to be working correctly. Some of the parts of the requirements are still not clear, so they may be changed" />
   </component>
 </project>

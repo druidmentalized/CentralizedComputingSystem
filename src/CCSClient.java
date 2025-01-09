@@ -55,7 +55,7 @@ public class CCSClient {
     private static InetAddress discoverServer(int port) {
         try (DatagramSocket udpSocket = new DatagramSocket()) {
             udpSocket.setBroadcast(true);
-            broadcastValue(udpSocket, DISCOVER_MESSAGE);
+            broadcastValue(udpSocket, DISCOVER_MESSAGE + "sometest");
 
             byte[] buffer = new byte[BUFFER_SIZE];
             DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length);
