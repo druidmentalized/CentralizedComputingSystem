@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CentralizedComputingSystem:jar" />
+      <artifact name="CCS:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -12,12 +12,18 @@
     <list default="true" id="e4637109-ed29-43b6-bb95-8ec7f4ffb9f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CCSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCSClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +53,7 @@
   "keyToString": {
     "Application.RunClient.executor": "Run",
     "Application.RunServer.executor": "Run",
+    "Application.RunWrongClient.executor": "Run",
     "JAR Application.RunJarServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -92,6 +99,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunWrongClient" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CCSClient2" />
+      <module name="CentralizedComputingSystem" />
+      <option name="PROGRAM_PARAMETERS" value="5058" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunJarServer" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/CentralizedComputingSystem_jar/CentralizedComputingSystem.jar" />
       <option name="PROGRAM_PARAMETERS" value="5058" />
@@ -103,6 +118,7 @@
     <list>
       <item itemvalue="Application.RunServer" />
       <item itemvalue="Application.RunClient" />
+      <item itemvalue="Application.RunWrongClient" />
       <item itemvalue="JAR Application.RunJarServer" />
     </list>
   </component>
@@ -127,7 +143,8 @@
       <workItem from="1736391469038" duration="5966000" />
       <workItem from="1736424905090" duration="4712000" />
       <workItem from="1736429792384" duration="44000" />
-      <workItem from="1736431204905" duration="3194000" />
+      <workItem from="1736431204905" duration="3235000" />
+      <workItem from="1736447597777" duration="2513000" />
     </task>
     <task id="LOCAL-00001" summary="Program not tested(TCP and UDP sockets completely done), no statistics writing">
       <option name="closed" value="true" />
@@ -145,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736429603726</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Program made, only small changes may be inserted">
+      <option name="closed" value="true" />
+      <created>1736434542073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736434542073</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Program not tested(TCP and UDP sockets completely done), no statistics writing" />
     <MESSAGE value="Program seems to be working correctly. Some of the parts of the requirements are still not clear, so they may be changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program seems to be working correctly. Some of the parts of the requirements are still not clear, so they may be changed" />
+    <MESSAGE value="Program made, only small changes may be inserted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program made, only small changes may be inserted" />
   </component>
 </project>
