@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4637109-ed29-43b6-bb95-8ec7f4ffb9f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CentralizedComputingSystem.iml" afterDir="false" />
+    <list default="true" id="e4637109-ed29-43b6-bb95-8ec7f4ffb9f3" name="Changes" comment="Program not tested(TCP and UDP sockets completely done), no statistics writing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CCSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCSClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +17,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;druidmentalized&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/druidmentalized/CentralizedComputingSystem.git&quot;,
+    &quot;accountId&quot;: &quot;04b989ca-8aaf-40c2-bcb4-aecd80c068d5&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -31,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.RunServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -50,6 +60,29 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\IDEAProjects\CentralizedComputingSystem\src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RunServer">
+    <configuration name="RunClient" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="CCSClient" />
+      <module name="CentralizedComputingSystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CCS" />
+      <module name="CentralizedComputingSystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RunServer" />
+      <item itemvalue="Application.RunClient" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -69,11 +102,25 @@
       <updated>1735936241242</updated>
       <workItem from="1735936242283" duration="1000" />
       <workItem from="1736186068472" duration="17000" />
-      <workItem from="1736391469038" duration="5824000" />
+      <workItem from="1736391469038" duration="5966000" />
+      <workItem from="1736424905090" duration="4557000" />
     </task>
+    <task id="LOCAL-00001" summary="Program not tested(TCP and UDP sockets completely done), no statistics writing">
+      <option name="closed" value="true" />
+      <created>1736398506449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736398506449</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Program not tested(TCP and UDP sockets completely done), no statistics writing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program not tested(TCP and UDP sockets completely done), no statistics writing" />
   </component>
 </project>

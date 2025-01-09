@@ -123,7 +123,7 @@ public class CCSClient {
                 arg2 = 0; // Avoid division by zero
             }
 
-            String request = operation + " " + 10 + " " + 0;
+            String request = operation + " " + arg1 + " " + arg2;
             System.out.println("Sending request: " + request);
 
             out.write(request + "\n");
