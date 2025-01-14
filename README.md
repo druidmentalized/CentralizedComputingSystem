@@ -48,9 +48,9 @@ The CCS server can handle multiple clients concurrently and report both global a
   - The server responds with `CCS FOUND`.
 - **TCP Communication**
   - The client connects to the server using the same port via TCP.
-  -  Example Request: ADD 10 5
-  -  Example Response: 15
-  -  Example Error: ERROR (e.g., invalid operation or arguments).
+  -  Example Request: `ADD 10 5`
+  -  Example Response: `15`
+  -  Example Error: `ERROR` (e.g., invalid operation or arguments).
 - **Statistics Reporting**
   - The server periodically prints global and interval-based statistics to the console.
 ### Example Console Output

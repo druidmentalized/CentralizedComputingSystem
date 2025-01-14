@@ -11,9 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e4637109-ed29-43b6-bb95-8ec7f4ffb9f3" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/CCS_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CCS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CCSClient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +148,7 @@
       <workItem from="1736586034777" duration="3198000" />
       <workItem from="1736862939066" duration="191000" />
       <workItem from="1736870992261" duration="941000" />
-      <workItem from="1736872555251" duration="779000" />
+      <workItem from="1736872555251" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="Program not tested(TCP and UDP sockets completely done), no statistics writing">
       <option name="closed" value="true" />
@@ -185,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736450426873</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="README file added">
+      <option name="closed" value="true" />
+      <created>1736873551160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736873551160</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +212,7 @@
     <MESSAGE value="Program seems to be working correctly. Some of the parts of the requirements are still not clear, so they may be changed" />
     <MESSAGE value="Program made, only small changes may be inserted" />
     <MESSAGE value="Statistics class introduced" />
-    <option name="LAST_COMMIT_MESSAGE" value="Statistics class introduced" />
+    <MESSAGE value="README file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="README file added" />
   </component>
 </project>
