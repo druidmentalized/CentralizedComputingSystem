@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.*;
-import java.util.*;
 import java.util.concurrent.*;
 
 public class CCS {
@@ -96,7 +95,8 @@ public class CCS {
                 if (tokens.length != 3) {
                     writer.println("ERROR");
                     lastStatistics.incrementIncorrectOperations();
-                    System.out.println(clientSocket.getInetAddress().getHostAddress() + ":" + clientSocket.getPort() + " — " + request + " is ERROR");
+                    System.out.println(clientSocket.getInetAddress().getHostAddress() + ":" + clientSocket.getPort() + " -- " + request + " is ERROR" +
+                            " (Incorrect number of arguments)");
                     continue;
                 }
 
@@ -111,7 +111,8 @@ public class CCS {
                 catch (NumberFormatException e) {
                     writer.println("ERROR");
                     lastStatistics.incrementIncorrectOperations();
-                    System.out.println(clientSocket.getInetAddress().getHostAddress() + ":" + clientSocket.getPort() + " -- " + request + " is ERROR");
+                    System.out.println(clientSocket.getInetAddress().getHostAddress() + ":" + clientSocket.getPort() + " -- " + request + " is ERROR (" +
+                            e.getMessage() + ")");
                     continue;
                 }
 
